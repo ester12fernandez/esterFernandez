@@ -1,1 +1,53 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML & API</title>
+    <link rel="stylesheet" href="libs/css/styles.css">
+</head>
+<body>
+    <table>
+            <tr>
+                <th>API Name</th>
+                <th>API Description</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>countryCode</td>
+                <td>
+                    <form id="countrycodeForm">
+                        <input type="text" placeholder="Lat" id="lat">
+                        <input type="text" placeholder="Lng" id="lng">
+                    </form>
+                </td>
+                <td><button id="countrycodeBtn">Submit</button></td>
+            </tr>
+            <tr>
+                <td>findNearbyPlaceName</td>
+                <td>
+                    <form id="nearbyplaceForm">
+                        <input type="text" placeholder="Lat" id="placeLat">
+                        <input type="text" placeholder="Lng" id="placeLng">
+                    </form>
+                </td>
+                <td><button id="nearbyplaceBtn">Submit</button></td>
+            </tr>
+            <tr>
+                <td>weather</td>
+                <td>
+                    <form>
+                        <input type="text" placeholder="North" id="north">
+                        <input type="text" placeholder="South" id="south">
+                        <input type="text" placeholder="West" id="west">
+                        <input type="text" placeholder="East" id="east">
+                    </form>
+                </td>
+                <td><button id="weatherBtn">Submit</button></td>
+            </tr>
+            <tr id="results"></tr>
+    </table>
+    <div id="preloader"></div>
+    <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+	<script type="application/javascript" src="libs/js/script.js"></script>
+</body>
+</html>
