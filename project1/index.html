@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Gazetteer App</title>
+		<meta name="description" content="Gazetteer App">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+        <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+		<link rel="stylesheet" href="libs/css/styles.css">
+
+	</head>
+	<body>
+    <div class="nav-region m-4">
+        <select id="countries"  class="form-select form-select-lg">
+        </select>
+        
+    </div>
+    <div id="display-region"></div>
+        <!-- Modal -->
+        <div class="modal modal-dialog-scrollable" id="country_details" tabindex="-1" aria-labelledby="title" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+      
+		<!-- <div id="preloader"></div> -->
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+        <script src="libs/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+        <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>    
+
+        <script src="libs/js/script.js">
+        </script>
+	</body>
+
+</html>
