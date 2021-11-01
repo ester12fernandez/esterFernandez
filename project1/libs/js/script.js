@@ -12,7 +12,6 @@ const getMap = (coords) => {
 		const mymap = L.map('map').setView([latitude, longitude], 13);
 	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-		maxZoom: 18,
 		id: 'mapbox/streets-v11',
 		tileSize: 512,
 		zoomOffset: -1,
@@ -152,6 +151,7 @@ const getMap2 =async (coords) => {
 			<br>Time: ${timezone.time}
 			<br>Time Zone ID: ${timezone.timezoneId}
 			`)
+			btn.button.click();
 	}).addTo(mymap);
 	L.easyButton('fa-cloud', function(btn, map){
 		btn.button.setAttribute('data-bs-toggle','modal');
@@ -175,6 +175,7 @@ const getMap2 =async (coords) => {
 				</div>
 			</div>
 			`)
+			btn.button.click();
 	}).addTo(mymap);
 
 
@@ -189,6 +190,7 @@ const getMap2 =async (coords) => {
 			}
 			
 			`)
+			btn.button.click();
 	}).addTo(mymap);
 	
 }
