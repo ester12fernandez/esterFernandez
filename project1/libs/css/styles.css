@@ -95,11 +95,19 @@ ul {
     z-index: 20;
 }
 
+.modal-dialog {
+    height: 75vh;
+}
 
 .modal-content {
     background-color: #00aaff;
     font-weight: bolder;
     color: #ffffff;
+}
+
+.modal-body {
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .weather-div {
     display: flex;
